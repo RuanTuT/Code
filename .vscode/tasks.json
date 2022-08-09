@@ -15,17 +15,24 @@
         "type": "shell",// shell: 输入命令
         // The actual command to execute.
         // 因为g++已经在环境变量中了，所以我们这里写命令就行不用写g++的绝对路径
-        "command": "g++",
+        // "command": "g++",
+        // "args": [
+        //   "${file}", // 表示当前文件（绝对路径）
+        //   // 在这里添加你还需要链接的.cpp文件
+        //   "-o",
+        //   "${fileDirname}/${fileBasenameNoExtension}.out",
+        //   "-W",
+        //   "-Wall",
+        //   "-g",
+        //   "-std=c++17",
+        // ],
+        "command": "make",
         "args": [
-          "${file}", // 表示当前文件（绝对路径）
-          // 在这里添加你还需要链接的.cpp文件
-          "-o",
-          "${fileDirname}/${fileBasenameNoExtension}.out",
-          "-W",
-          "-Wall",
-          "-g",
-          "-std=c++17",
+         "-C",
+         "${workspaceFolder}/src",
+         "all"
         ],
+
         // Defines to which execution group this task belongs to.
         // It supports "build" to add it to the build group and "test" to add it to the test group.
         // Tasks that belong to the build/test group can be executed by running Run Build/Test Task from the Command Palette (sft cmd P).

@@ -6,7 +6,7 @@
         "files.exclude": {
           // dSYM文件具有调试信息,普通使用的话不看到它就可以了
           "**/*.dSYM": true,
-          "**/*.out": true,
+          // "**/*.out": true,
           ".gitignore":true
      },
      
