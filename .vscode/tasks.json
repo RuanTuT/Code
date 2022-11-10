@@ -83,7 +83,7 @@
             "message": 5,
           },
         },
-        // 官网教程 https://code.visualstudio.com/docs/cpp/config-clang-mac#_build-helloworldcpp 
+        // 官网教程 cpp/config-clhttps://code.visualstudio.com/docs/ang-mac#_build-helloworldcpp 
         // 提到了另一种problemMatcher，但试了之后好像不起作用，甚至还把我原本的电脑搞出了一些问题……
       },
       {

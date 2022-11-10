@@ -71,6 +71,13 @@
             "configurations": [],
             "compounds": []
         },
+        "C_Cpp.errorSquiggles": "Disabled",
+        "files.associations": {
+          "iostream": "cpp",
+          "ostream": "cpp",
+          "vector": "cpp",
+          "tuple": "cpp"
+        },
         // --------------------------------------------------------------------------------------
       
        
