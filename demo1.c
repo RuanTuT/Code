@@ -1,14 +1,13 @@
-//#include<stdio.h>
+#include<stdio.h>
 //#include<dos.h>
-//#include<stdlib.h>
+#include<stdlib.h>
 //#include<conio.h>
-#include <iostream>
+//#include <iostream.h>
 #define P_NUM 5
 #define P_TIME 50
-using namespace std;
 enum state{
 	ready,
-	execute,
+	execute
 	block,
 	finish
 };
@@ -242,7 +241,7 @@ void round_cal(){
 	}
 }
  
-int main(){
+void main(){
 	display_menu();
 	int k;
 	scanf("%d",&k);
